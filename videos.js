@@ -26,7 +26,7 @@ const CASES = [
   { titre: "Photo Doom", photo: "img/photo-j4.jpg" },
   { titre: "Case mystère", lien: "" },
   { titre: "Bande-annonce Doomsday (VF)", lien: "https://www.youtube.com/watch?v=g9NAGSPpfjs" },
-  { titre: "Case mystère", lien: "" },
+  { titre: "Affiche Doom & Loki", photo: "img/photo-j7.jpg" },
   { titre: "Photo Doom", photo: "img/photo-j8.jpg" },
   { titre: "Scène bonus Thunderbolts*", lien: "https://www.youtube.com/watch?v=ws-QVLXCisI" },
   { titre: "Scène post-générique Les Quatre Fantastiques: Premiers Pas", video: "img/video-j10.mp4" },
