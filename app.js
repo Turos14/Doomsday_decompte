@@ -54,6 +54,7 @@ function rendreGrille() {
 const modal = document.getElementById("modal");
 const modalLink = document.getElementById("modal-link");
 const modalPhoto = document.getElementById("modal-photo");
+const modalVideo = document.getElementById("modal-video");
 
 function ouvrirModal(i) {
   const c = CASES[i];
@@ -63,7 +64,18 @@ function ouvrirModal(i) {
   modalLink.classList.remove("desactive");
   modalLink.removeAttribute("download");
   modalLink.removeAttribute("target");
-  if (c.photo) {
+  modalVideo.pause();
+  modalVideo.hidden = true;
+  modalVideo.removeAttribute("src");
+  if (c.video) {
+    modalPhoto.hidden = true;
+    modalPhoto.removeAttribute("src");
+    modalVideo.hidden = false;
+    modalVideo.src = c.video;
+    modalLink.href = c.video;
+    modalLink.setAttribute("download", c.video.split("/").pop());
+    modalLink.textContent = "Télécharger la vidéo";
+  } else if (c.photo) {
     modalPhoto.hidden = false;
     modalPhoto.src = c.photo;
     modalPhoto.alt = c.titre;
@@ -86,6 +98,15 @@ function ouvrirModal(i) {
   modal.hidden = false;
 }
 
+// Vidéo absente du dossier img/
+modalVideo.addEventListener("error", () => {
+  if (!modalVideo.getAttribute("src")) return;
+  modalVideo.hidden = true;
+  modalLink.removeAttribute("href");
+  modalLink.classList.add("desactive");
+  modalLink.textContent = "Vidéo bientôt disponible";
+});
+
 // Photo absente du dossier img/ : on le signale au lieu d'une image cassée
 modalPhoto.addEventListener("error", () => {
   if (!modalPhoto.getAttribute("src")) return;
@@ -95,7 +116,10 @@ modalPhoto.addEventListener("error", () => {
   modalLink.textContent = "Photo bientôt disponible";
 });
 
-function fermerModal() { modal.hidden = true; }
+function fermerModal() {
+  modal.hidden = true;
+  modalVideo.pause();
+}
 document.getElementById("modal-close").addEventListener("click", fermerModal);
 modal.addEventListener("click", (e) => { if (e.target === modal) fermerModal(); });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") fermerModal(); });

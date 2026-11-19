@@ -9,6 +9,7 @@
 //  - CASES : 15 entrées dans l'ordre des cases, soit
 //      { titre, lien }   -> vidéo (lien vide = « bientôt disponible »)
 //      { titre, photo }  -> photo affichée + bouton télécharger
+//      { titre, video }  -> vidéo hébergée (fichier dans img/) lue dans l'app + bouton télécharger
 //  - FILMS : films essentiels à voir avant Doomsday (cochables).
 // ============================================================
 
@@ -28,7 +29,7 @@ const CASES = [
   { titre: "Case mystère", lien: "" },
   { titre: "Photo Doom", photo: "img/photo-j8.jpg" },
   { titre: "Scène bonus Thunderbolts*", lien: "https://www.youtube.com/watch?v=ws-QVLXCisI" },
-  { titre: "Scène post-générique Les Quatre Fantastiques: Premiers Pas", lien: "https://www.youtube.com/watch?v=nqkblBJ2Wu0" },
+  { titre: "Scène post-générique Les Quatre Fantastiques: Premiers Pas", video: "img/video-j10.mp4" },
   { titre: "Photo Doom", photo: "img/photo-j11.jpg" },
   { titre: "Scène bonus Spider-Man: Brand New Day", lien: "https://www.youtube.com/watch?v=Ct3PBpDAHR0" },
   { titre: "Photo Doom", photo: "img/photo-j13.jpg" },

@@ -1,5 +1,5 @@
 // Réseau d'abord (pour récupérer les nouveaux liens), cache en secours hors ligne
-const CACHE = "doomsday-v3";
+const CACHE = "doomsday-v4";
 const FICHIERS = [
   "./", "index.html", "style.css", "app.js", "videos.js", "manifest.json",
   "icons/icon.svg", "icons/icon-192.png", "icons/icon-512.png",
@@ -20,6 +20,8 @@ self.addEventListener("activate", (e) => {
 
 self.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || !e.request.url.startsWith(self.location.origin)) return;
+  // Vidéos (requêtes Range, réponses 206) : on laisse le navigateur gérer, sans cache
+  if (e.request.headers.has("range")) return;
   e.respondWith(
     fetch(e.request)
       .then((rep) => {
