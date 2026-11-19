@@ -16,7 +16,7 @@
 const CONFIG = {
   DEBUT: "2026-12-01",
   DOOMSDAY: "2026-12-16T00:00:00",
-  TEST: false,
+  TEST: true,
 };
 
 const CASES = [
