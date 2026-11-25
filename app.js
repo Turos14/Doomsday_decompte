@@ -210,6 +210,31 @@ function majProgression(vus) {
 
 rendreFilms();
 
+// ---------- Personnages confirmés ----------
+function rendrePersonnages() {
+  const bloc = document.getElementById("persos");
+  let total = 0;
+  PERSONNAGES.forEach((g) => {
+    const titre = document.createElement("h3");
+    titre.textContent = g.groupe;
+    const ul = document.createElement("ul");
+    g.membres.forEach((m) => {
+      const li = document.createElement("li");
+      const nom = document.createElement("span");
+      nom.textContent = m.nom;
+      const acteur = document.createElement("small");
+      acteur.textContent = m.acteur;
+      li.append(nom, acteur);
+      ul.append(li);
+      total++;
+    });
+    bloc.append(titre, ul);
+  });
+  document.getElementById("persos-total").textContent = `${total} personnages`;
+}
+
+rendrePersonnages();
+
 // ---------- PWA ----------
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("sw.js");

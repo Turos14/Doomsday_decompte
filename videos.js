@@ -11,6 +11,8 @@
 //      { titre, photo }  -> photo affichée + bouton télécharger
 //      { titre, video }  -> vidéo hébergée (fichier dans img/) lue dans l'app + bouton télécharger
 //  - FILMS : films essentiels à voir avant Doomsday (cochables).
+//  - PERSONNAGES : personnages confirmés, regroupés par équipe
+//      { groupe, membres: [{ nom, acteur }] }
 // ============================================================
 
 const CONFIG = {
@@ -53,4 +55,51 @@ const FILMS = [
   { titre: "Captain America: Brave New World (2025)", lien: "https://www.google.com/search?kgmid=%2Fg%2F11s573z128&q=Captain+America%3A+Brave+New+World" },
   { titre: "Thunderbolts* (2025)", lien: "" },
   { titre: "Les Quatre Fantastiques: Premiers Pas (2025)", lien: "https://www.google.com/search?kgmid=%2Fg%2F11pc04s3qv&q=Les+Quatre+Fantastiques%3A+Premiers+Pas" },
+];
+
+// Personnages confirmés officiellement (annonce de mars 2025 + Comic-Con de juillet 2026)
+const PERSONNAGES = [
+  { groupe: "Le grand méchant", membres: [
+    { nom: "Docteur Fatalis (Doom)", acteur: "Robert Downey Jr." },
+  ]},
+  { groupe: "Avengers", membres: [
+    { nom: "Thor", acteur: "Chris Hemsworth" },
+    { nom: "Sam Wilson / Captain America", acteur: "Anthony Mackie" },
+    { nom: "Steve Rogers", acteur: "Chris Evans" },
+    { nom: "Peggy Carter", acteur: "Hayley Atwell" },
+    { nom: "Scott Lang / Ant-Man", acteur: "Paul Rudd" },
+    { nom: "Cassie Lang", acteur: "Kathryn Newton" },
+    { nom: "Joaquin Torres / Falcon", acteur: "Danny Ramirez" },
+    { nom: "Loki", acteur: "Tom Hiddleston" },
+    { nom: "Shang-Chi", acteur: "Simu Liu" },
+  ]},
+  { groupe: "Thunderbolts*", membres: [
+    { nom: "Bucky Barnes", acteur: "Sebastian Stan" },
+    { nom: "Yelena Belova", acteur: "Florence Pugh" },
+    { nom: "Red Guardian", acteur: "David Harbour" },
+    { nom: "John Walker / U.S. Agent", acteur: "Wyatt Russell" },
+    { nom: "Ghost", acteur: "Hannah John-Kamen" },
+    { nom: "Bob / Sentry", acteur: "Lewis Pullman" },
+  ]},
+  { groupe: "Les Quatre Fantastiques", membres: [
+    { nom: "Reed Richards / Mister Fantastic", acteur: "Pedro Pascal" },
+    { nom: "Sue Storm / La Femme invisible", acteur: "Vanessa Kirby" },
+    { nom: "Johnny Storm / La Torche humaine", acteur: "Joseph Quinn" },
+    { nom: "Ben Grimm / La Chose", acteur: "Ebon Moss-Bachrach" },
+  ]},
+  { groupe: "X-Men", membres: [
+    { nom: "Professeur X", acteur: "Patrick Stewart" },
+    { nom: "Magneto", acteur: "Ian McKellen" },
+    { nom: "Cyclope", acteur: "James Marsden" },
+    { nom: "Diablo", acteur: "Alan Cumming" },
+    { nom: "Mystique", acteur: "Rebecca Romijn" },
+    { nom: "Le Fauve", acteur: "Kelsey Grammer" },
+    { nom: "Gambit", acteur: "Channing Tatum" },
+  ]},
+  { groupe: "Wakanda & Talokan", membres: [
+    { nom: "Shuri / Black Panther", acteur: "Letitia Wright" },
+    { nom: "M'Baku", acteur: "Winston Duke" },
+    { nom: "Namor", acteur: "Tenoch Huerta" },
+    { nom: "Namora", acteur: "Mabel Cadena" },
+  ]},
 ];

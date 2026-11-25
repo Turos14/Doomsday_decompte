@@ -158,3 +158,8 @@ h1 {
 .films input { accent-color: var(--vert); width: 18px; height: 18px; margin-top: 1px; }
 .films li:has(input:checked) span { text-decoration: line-through; opacity: .5; }
 .films a { color: var(--vert); font-size: .75rem; opacity: .8; padding: 0 4px; }
+
+.persos h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .15em; opacity: .8; margin: 18px 0 8px; }
+.persos ul + h3 { margin-top: 22px; }
+.persos li { justify-content: space-between; flex-wrap: wrap; column-gap: 12px; }
+.persos li small { opacity: .6; font-size: .75rem; }
