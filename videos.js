@@ -24,19 +24,19 @@ const CONFIG = {
 const CASES = [
   { titre: "Bande-annonce Doomsday (VF)", lien: "https://www.youtube.com/watch?v=opI0klN3-Pw" },
   { titre: "Photo Cyclope", photo: "img/photo-j2.jpg" },
-  { titre: "Case mystère", lien: "" },
+  { titre: "77 détails cachés dans le trailer d'Avengers: Doomsday", lien: "https://www.youtube.com/watch?v=8x-YfFJbAQI" },
   { titre: "Photo Doom", photo: "img/photo-j4.jpg" },
   { titre: "Scène bonus Spider-Man: Brand New Day", video: "img/video-j5.mp4" },
-  { titre: "Bande-annonce Doomsday (VF)", lien: "https://www.youtube.com/watch?v=g9NAGSPpfjs" },
-  { titre: "Affiche Doom & Loki", photo: "img/photo-j7.jpg" },
-  { titre: "Photo Doom", photo: "img/photo-j8.jpg" },
   { titre: "Scène bonus Thunderbolts*", lien: "https://www.youtube.com/watch?v=ws-QVLXCisI" },
-  { titre: "Scène post-générique Les Quatre Fantastiques: Premiers Pas", video: "img/video-j10.mp4" },
+  { titre: "Photo Doom", photo: "img/photo-j7.jpg" },
+  { titre: "Photo Doom", photo: "img/photo-j8.jpg" },
+  { titre: "Bande-annonce Doomsday (VF 2)", lien: "https://www.youtube.com/watch?v=g9NAGSPpfjs" },
+  { titre: "Scène bonus Vision", video: "img/video-j10.mp4" },
   { titre: "Photo Doom", photo: "img/photo-j11.jpg" },
   { titre: "Scène bonus Spider-Man: Brand New Day", lien: "https://www.youtube.com/watch?v=Ct3PBpDAHR0" },
   { titre: "Photo Doom", photo: "img/photo-j13.jpg" },
   { titre: "Scène bonus Les Quatre Fantastiques: Premiers Pas", lien: "https://www.youtube.com/watch?v=3ZJWwpjCKaw" },
-  { titre: "77 détails cachés dans le trailer d'Avengers: Doomsday", lien: "https://www.youtube.com/watch?v=8x-YfFJbAQI" },
+  { titre: "Bande-annonce Doomsday (VF 3)", lien: "https://www.youtube.com/watch?v=PoELaA55OnY" },
 ];
 
 const FILMS = [
