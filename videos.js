@@ -26,7 +26,7 @@ const CASES = [
   { titre: "Photo Cyclope", photo: "img/photo-j2.jpg" },
   { titre: "Case mystère", lien: "" },
   { titre: "Photo Doom", photo: "img/photo-j4.jpg" },
-  { titre: "Case mystère", lien: "" },
+  { titre: "Scène bonus Spider-Man: Brand New Day", video: "img/video-j5.mp4" },
   { titre: "Bande-annonce Doomsday (VF)", lien: "https://www.youtube.com/watch?v=g9NAGSPpfjs" },
   { titre: "Affiche Doom & Loki", photo: "img/photo-j7.jpg" },
   { titre: "Photo Doom", photo: "img/photo-j8.jpg" },
