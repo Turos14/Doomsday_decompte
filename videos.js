@@ -18,7 +18,7 @@
 const CONFIG = {
   DEBUT: "2026-12-01",
   DOOMSDAY: "2026-12-16T00:00:00",
-  TEST: false,
+  TEST: true,
 };
 
 const CASES = [
@@ -33,7 +33,7 @@ const CASES = [
   { titre: "Bande-annonce Doomsday (VF 2)", lien: "https://www.youtube.com/watch?v=g9NAGSPpfjs" },
   { titre: "Scène bonus Vision", video: "img/video-j10.mp4" },
   { titre: "Photo Doom", photo: "img/photo-j11.jpg" },
-  { titre: "Scène bonus Spider-Man: Brand New Day", lien: "https://www.youtube.com/watch?v=Ct3PBpDAHR0" },
+  { titre: "Case mystère", lien: "" },
   { titre: "Photo Doom", photo: "img/photo-j13.jpg" },
   { titre: "Scène bonus Les Quatre Fantastiques: Premiers Pas", lien: "https://www.youtube.com/watch?v=3ZJWwpjCKaw" },
   { titre: "Bande-annonce Doomsday (VF 3)", lien: "https://www.youtube.com/watch?v=PoELaA55OnY" },
